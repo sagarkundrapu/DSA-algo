@@ -17,7 +17,7 @@ void verifyAllPairs(int a[],int n,int target){
 
 // optimized approach using 2 pointers would take O(n) time complexity
 
-void verifyAllPairsOptimized(int a[],int n,int target){
+void TwoPointer(int a[],int n,int target){
     int i=0;
     int j=n-1;
     while(i<j){
@@ -42,5 +42,6 @@ int main(){
     int n=sizeof(a)/sizeof(a[0]);
     int target=9;
     verifyAllPairs(a,n,target);     // bruteforce O(n^2)
+    TwoPointer(a,n,target);     // optimized O(n)
     return 0;
 }
